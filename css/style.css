@@ -1,0 +1,94 @@
+/*
+Stylesheet for Willow Commnication
+Date created: 18/11/2015
+URI: http://www.willowsv.com
+Author: Sarah Oluyede
+Author URI: 
+Version: 1.0
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0 0 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+}
+p, div {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+}
+i {
+    color: #ffffff;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #414141;
+  }
+
+.footerText {
+    font-size: 15px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.navText {
+    font-size: 30px;
+}
+
+.business {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.business:hover {
+    border-color: #f1f1f1;
+}
+
+.slideanim {visibility: hidden;}
+.imgslide {
+    /* animation name */
+    animation-name: imgslide;
+    -webkit-animation-name: imgslide;
+    /* duration of animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (real quick) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes imgslide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes imgslide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
