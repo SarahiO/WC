@@ -27,6 +27,9 @@ p, div {
 i {
     color: #ffffff;
 }
+.icolor {
+    color: #000000;
+}
 
 footer {
   position: absolute;
