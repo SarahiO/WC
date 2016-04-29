@@ -110,3 +110,22 @@ footer {
     -khtml-border-radius: 50%
     vertical-align: middle;
 }
+
+.container-fluid {
+    padding: 60px 70px;
+}
+
+.container-fluid-l {
+    padding: 20px 50px;
+}
+
+.containerBg {
+    background-color: #f6f6f6;
+}
+
+.label-default {
+  background-color: #414141;
+ /* b5d2d6;*/
+}
+
+.imgCenter
