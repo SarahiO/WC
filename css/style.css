@@ -18,12 +18,26 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif; font-weight: 700;
 }
+
 p, div {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 15px;
+    font-family: 'Oxygen', sans-serif; font-weight: 400;
+    font-size: 20px;
 }
+
+.bigHeading {
+    font-size: 30px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.lightText {
+    font-family: 'Oxygen', sans-serif; font-weight: 300;
+}
+
 i {
     color: #ffffff;
 }
@@ -41,9 +55,10 @@ footer {
   }
 
 .footerText {
+    font-family: 'Oxygen', sans-serif; font-weight: 300;
     font-size: 15px;
     color: #ffffff;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .navText {
@@ -112,11 +127,7 @@ footer {
 }
 
 .container-fluid {
-    padding: 60px 70px;
-}
-
-.container-fluid-l {
-    padding: 20px 50px;
+    padding: 50px 130px;
 }
 
 .containerBg {
@@ -127,5 +138,3 @@ footer {
   background-color: #414141;
  /* b5d2d6;*/
 }
-
-.imgCenter
