@@ -10,7 +10,7 @@ Version: 1.0
 html {
     position: relative;
     min-height: 100%;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 body {
@@ -26,8 +26,8 @@ p, div {
     font-size: 20px;
 }
 
-.bigHeading {
-    font-size: 30px;
+.bigText {
+    font-size: 40px;
 }
 
 h1{
@@ -75,6 +75,28 @@ footer {
 
 .business:hover {
     border-color: #f1f1f1;
+}
+
+.businessA {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+   /* opacity: 0.7;*/
+}
+.businessA:hover {
+    border-color: #b5d2d6;
+}
+
+.businessO {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+   /* opacity: 0.7;*/
+}
+.businessO:hover {
+    border-color: #eaa24a;
 }
 
 .slideanim {visibility: hidden;}
@@ -126,8 +148,12 @@ footer {
     vertical-align: middle;
 }
 
-.container-fluid {
-    padding: 50px 130px;
+#brandPad {
+    padding: 40px 10px 20px 10px;
+}
+
+#containerPad {
+    padding: 20px 30px;
 }
 
 .containerBg {
@@ -138,3 +164,79 @@ footer {
   background-color: #414141;
  /* b5d2d6;*/
 }
+
+.padExtra-one {
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    line-height: 60px;
+    background: #434343;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: #e9ebec;
+    color: #444;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .back-to-top {display: none !important;}
+}
+
+#panelText {
+    color: #000000;
+    text-shadow: none;
+}
+
+#panelTitle {
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 100px;
+}
+
+
+/* Break points for text and image sizes */
+
+/*Navbar Brand */
+@media screen and (max-width: 449px) {
+    .navbar-brand {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 347px) {
+    .navbar-brand {
+        font-size: 58px;
+    }
+}
+
+/* logo subtitle */
+@media screen and (max-width: 320px) {
+    .padExtra-one {
+        font-size: 20px;
+    }
+}
+
+/* h1 headings & links */

@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- the above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
             <meta name="description" content="Willow Communications Website">
             <meta name="author" content="Sarah I Oluyede">
@@ -46,34 +46,33 @@
             <![endif]-->
         </head>
         <body>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#willowNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">WILLOW</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="willowNavbar">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="products.html">Gaming Portfolio</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
+            <div class="container-fluid" id="brandPad">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#willowNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand lightText" href="index.html">WILLOW<!--<p class="padExtra-one text-center">Communications Limited</p>--></a>
+                        <p></p>
                     </div>
-                </div>
-            </nav>
-            <div id="willowCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="collapse navbar-collapse" id="willowNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="products.html">Gaming Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+           <div id="willowCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#willowCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#willowCarousel" data-slide-to="1"></li>
                     <li data-target="#willowCarousel" data-slide-to="2"></li>
-                    <li data-target="willowwCarousel" data-slide-to="3"></li>
+                    <li data-target="#willowCarousel" data-slide-to="3"></li>
                 </ol>
                 
                 <!-- Wrapper for carousel slides -->
@@ -103,15 +102,16 @@
                 </a>
             </div>
              <!-- Section links -->
-            <div class="container-fluid-l text-center">
-                <br>
-                <p class="bigHeading"><a href="#">Services</a> - <a href="#">Solutions</a> - <a href="#">Who We Serve</a></p c>
+            <div class="container text-center">
+                <h1 class="lightText"><a href="#services">Services</a> - <a href="#solutions">Solutions</a> - <a href="#whoweserve">Who We Serve</a></h1>
+                <hr>
             </div>
             <!-- Services -->
-            <div class="container-fluid">
+            <div class="container-fluid" id="containerPad">
+                <a id="services">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h1>Services</h1>
+                        <h1 class="lightText">SERVICES</h1>
                         <ul>
                            <li>Design</li>
                            <li>Installation</li>
@@ -129,16 +129,18 @@
                         <img src="images/img3.png" alt="image" class="img-responsive pull-right">
                     </div>
                 </div>
+                </a>
             </div>
             <!-- Solutions -->
-            <div class="container-fluid containerBg">
+            <div class="container-fluid containerBg" id="containerPad">
+                <a id="solutions">
                 <div class="row">
                     <div class="col-sm-8">
                         <img src="images/img3.png" alt="image" class="img-responsive">
                     </div>
                     <div class="col-sm-4">
-                        <div dir="rtl">
-                            <h1>Solutions</h1>
+                        <div>
+                            <h1 class="lightText">SOLUTIONS</h1>
                             <ul>
                                 <li>Assisted Hearing</li>
                                 <li>induction Loop</li>
@@ -153,12 +155,14 @@
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
             <!-- Who We Serve -->
-            <div class="container-fluid">
+            <div class="container-fluid" id="containerPad">
+                <a id="whoweserve">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h1>Who We Serve</h1>
+                        <h1 class="lightText">WHO WE SERVE</h1>
                         <ul>
                             <li>Bar and Restaurant</li>
                             <li>Gaming</li>
@@ -175,12 +179,16 @@
                         <img src="images/img3.png" alt="image" class="img-responsive pull-right">
                     </div>
                 </div>
+                </a>
             </div>
             <hr class="featurette-divider">
-            <!-- Our Oartner Companies -->
-            <div class="container text-center">
-                <p>Let's get going - Contact Willow Communications now for your next AV Project, large or small.</p>
+            <!-- Our Partner Companies -->
+            <div class="container-fluid-two text-center">
+                <h3 class="lightText"><em>Let's get going - Contact Willow Communications now for your next AV Project, large or small.</em></h3>
                 <br>
+                <hr>
+            </div>
+            <div class="container text-center">
                 <div class="row">
                     <div class="col-sm-4">
                         <a href="http://www.oursignage.com/">
@@ -205,6 +213,7 @@
                 <p class="footerText">&#169; Willow Communications Limited 2016 | <a href="https://www.linkedin.com/company/willow-communications-limited"><i class="fa fa-linkedin-square fa-lg"></i></a></p>
             </div>
         </footer>
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -212,7 +221,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="js/jquery.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
         </body>
         
     </html>
