@@ -46,32 +46,34 @@
             <![endif]-->
         </head>
         <body>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#willowNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">WILLOW</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="willowNavbar">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="products.html">Products</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
+            <div class="container-fluid" id="brandPad">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#willowNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand lightText" href="index.html">WILLOW<!--<p class="padExtra-one text-center">Communications Limited</p>--></a>
+                        <p></p>
                     </div>
-                </div>
-            </nav>
-            <hr class="featurette-divider">
+                    <div class="collapse navbar-collapse" id="willowNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="gamingportfolio.html">Gaming Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <hr class="featurette-divider">
+            </div>
+            
             <div class="container">
+                <h1 class="text-center lightText">CONTACT</h1>
                 <br>
-                <h2 class="text-center">CONTACT</h2>
-                <br>
+                <p>We are located in Northampton on the Brackmills Business Park, just five minutes east of M1 Junction 15. We are ten minutes from Northampton's main line train station.</p>
+                <p>We are just one hour from London Luton, London Stanstead, Birmingham and East Midlands airports, and one hour thirty minutes from London Heathrow airport.</p>
+                <hr>
                 <div class="row">
                     <div class="col-sm-5">
                         <p>Contact us and we'll get back to you within 24 hours</p>
@@ -88,6 +90,14 @@
                                 <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="contactnumber" name="contactnumber" placeholder="Contact Number" type="tel" required>
+                            </div>
+                        </div>
                         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
                         <div class="row">
                             <div class="col-sm-12 form-group">
@@ -98,8 +108,8 @@
                 </div>
             </div>
             
-            <!--<div id="googleMap" style="height: 400px;width: 100%;"></div>
-            <!-- Google Maps 
+            <div id="googleMap" style="height: 400px;width: 100%;"></div>
+            <!-- Google Maps -->
             <script src="http://maps.googleapis.com/maps/api/js?AIzaSyAsY9l9oTzOUl64CmuNkFZ2myEbFH0OGYE"></script>
             <script>
                 function initialize()
@@ -120,7 +130,7 @@
                 }
                 
                 window.onload = loadScript;
-            </script>-->
+            </script>
             
         <!-- Footer -->
         <footer class="footerText">
@@ -137,6 +147,6 @@
         <script src="js/jquery.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
         </body>
     </html>
