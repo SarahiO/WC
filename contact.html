@@ -108,29 +108,26 @@
                 </div>
             </div>
             
-            <div id="googleMap" style="height: 400px;width: 100%;"></div>
             <!-- Google Maps -->
-            <script src="http://maps.googleapis.com/maps/api/js?AIzaSyAsY9l9oTzOUl64CmuNkFZ2myEbFH0OGYE"></script>
+            <div id="map" style="height: 500px; width: 100%; background-color: #ccc;"></div>
             <script>
-                function initialize()
-                {
-                    var mapProp = {
-                        center: new google.maps.Latlng(52.219526, -0.865355),
-                        zoom:10,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                    };
-                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                function initMap() {
+                    var myLatLng = {lat:52.219528, lng: -0.865046};
+                    
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 18,
+                        center: myLatLng
+                    });
+                    
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Willow Communications'
+                    });
                 }
-                function loadScript()
-                {
-                    var script = document.createElement("script");
-                    script.type = "text/javascript";
-                    script.src = "http://maps.googleapis.com/maps/api/js?key=$sensor=false&callback=initialize";
-                    document.body.appendChild(script);
-                }
-                
-                window.onload = loadScript;
             </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsY9l9oTzOUl64CmuNkFZ2myEbFH0OGYE&callback=initMap"></script>
+            <
             
         <!-- Footer -->
         <footer class="footerText">
