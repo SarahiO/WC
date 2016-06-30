@@ -54,3 +54,12 @@ $(window).load(function() {
         });
     }
 })
+
+$('form').on('submit', function(e) {
+    if (grecaptcha.get.getResponse() == "") {
+        e.preventDefault();
+        alert("You much complete the Captcha!!");
+    } else {
+        alert("Thank you for you Enquiry");
+    }
+})
