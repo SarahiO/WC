@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- the above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
             <meta name="description" content="Willow Communications Website">
             <meta name="author" content="Sarah I Oluyede">
@@ -27,8 +27,8 @@
             <meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
             <meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
             <meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
-
-            <title>Willow Communications | Home</title>
+            
+            <title>Willow Communications | Contact</title>
             
             <!-- Bootstrap core CSS -->
             <link href="css/bootstrap.css" rel="stylesheet">
@@ -55,9 +55,10 @@
                 ga('send', 'pageview');
               
           </script>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            
         </head>
         <body id="body">
-            <!-- Navigation -->
             <div class="container-fluid" id="brandPad">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
@@ -79,62 +80,85 @@
                 </nav>
                 <hr class="featurette-divider">
             </div>
-            <!-- About Us -->
+            
             <div class="container">
-                <h1 class="text-center lightText">About Us</h1>
+                <h1 class="text-center lightText">CONTACT</h1>
                 <br>
-                <blockquote class="blockquote" id="bigText"><em>Why make Willow Communications Limited your Audio Visual partner?</em></blockquote>
-                <br>
-                <h2 class="lightText">Experience</h2>
-                <p class="text-center">Willow Communications Limited has for over 27 years year provided audio visual services for business and corporate clients.</p>
-                <br>
-                <div class="sectionBg">
-                    <h2 class="lightText">Focus</h2>
-                    <p class="text-center">We provide only commercial audio visual soultions. We do not sell domestic audio visual equipment or provide lighting solutions.</p>
+                <p>We are located in Northampton on the Brackmills Business Park, just five minutes east of M1 Junction 15. We are ten minutes from Northampton's main line train station.</p>
+                <p>We are just one hour from London Luton, London Stanstead, Birmingham and East Midlands airports, and one hour thirty minutes from London Heathrow airport.</p>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>Contact us and we'll get back to you within 24 hours</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Willow Communications Limited, Brackmills, Northampton, NN4 7BQ</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> 01604 877 001</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> enquiries@willowsv.com</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="alert alert-success"><strong>Success!</strong> Your message has been sent.</div>
+                        <form action="contact.php" method="post" role="form">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="contactnumber" name="contactnumber" placeholder="Contact Number" type="tel" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Leo8yMTAAAAALjTEelCaZaKDLJ5JWB7C4ViNi-y"></div>
+                                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <br>
-                <h2 class="lightText">In House Technical Excellence</h2>
-                <p class="text-center">We train and manage our engineers in house. This practice enables us to maintain the high levels of expertise and service that we aim for on every project, large or small.</p>
-                <br>
-                <div class="sectionBg">
-                    <h2 class="lightText">Core Values</h2>
-                    <p class="text-center">We are open and honest and operate as a team with everyone at Willow putting our customers first. We continually learn from our clients and from our projects delivered and always aim to exceed expectations and aim to improve. Our work reflects on the Comapny, not the individual.</p>
-                </div>
-                <br>
-                <h2 class="lightText">Long Term Relationships</h2>
-                <p class="text-center">We take a long term view to our business relationships and as a consequence have an excellent record of long term client retention.</p>
-                <br>
             </div>
-            <div class="container-fluid containerBg">
-                <div class="container">
-                    <h1 class="text-center lightText">Assisted Hearing Systems - Action on Hearing Loss</h1>
-                    <br>
-                    <p>From Bingo Halls to Buckingham Palace, from Boardroom to Meeting Room, Willow has installed and maintained assisted hearing systems to improve accessibility and communication. This includes induction loops, speech transfer, infra-red and sound masking systems.</p>
-                    <p>In January 2016, Willow Communications was appointed as the sole UK installer for Action for Hearing Loss the UK's leading Charity for confronting deafness, tinnitus and hearing loss.</p>
-                    <br>
-                    <a href="https://www.actiononhearingloss.org.uk">
-                        <p class="text-center">Action on Hearing Loss website</p>
-                        <img src="images/aohl-logo.png" alt="Action on Hearing Loss" class="center-block">
-                    </a>
-                </div>
-                 <br>
+            
+            <!-- Google Maps -->
+            <div id="map" style="height: 500px; width: 100%; background-color: #ccc;"></div>
+            <script>
+                function initMap() {
+                    var myLatLng = {lat:52.219528, lng: -0.865046};
+                    
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 18,
+                        center: myLatLng
+                    });
+                    
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Willow Communications'
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9z-oPf11V3zAiFqL_zKq8az8hGDfw3RU&callback=initMap"></script>
+            
+        <!-- Footer -->
+        <footer class="footerText">
+            <div class="container">
+                <p class="footerText">&#169; Willow Communications Limited 2016 | <a href="https://www.linkedin.com/company/willow-communications-limited"><i class="fa fa-linkedin-square fa-lg"></i></a></p>
             </div>
-           
-            <!-- Footer -->
-            <footer class="footerText">
-                <div class="container">
-                    <p class="footerText">&#169; Willow Communications Limited 2016 | <a href="https://www.linkedin.com/company/willow-communications-limited"><i class="fa fa-linkedin-square fa-lg"></i></a></p>
-                </div>
-            </footer>
-            <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
-            <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-            <script src="js/jquery.js"></script>
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="js/ie10-viewport-bug-workaround.js"></script>
-        </body>
+        </footer>
         
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        </body>
     </html>

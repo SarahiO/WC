@@ -6,9 +6,10 @@ $email = $_REQUEST['email'];
 $company = $_REQUEST['company'];
 $contactnumber =$_REQUEST['contactnumber'];
 $comments = $_REQUEST['comments'];
-$sent = mail($to, $subject, "$name \n $company \n $email \n $contactnumber \n $comments");
+$sent = mail($to, $subject, "Name: $name \n Company: $company \n Email Address: $email \n Contact Number: $contactnumber \n Enquiry: $comments");
 if($sent)
-    {print "Thank you for your enquiry"; }
+    header('Location: thankyoucontact.html');
 else
-    {print "We encountered an error sending your enquiry"; }
+    header('Location: errorcontact.html');
+    
 ?>
