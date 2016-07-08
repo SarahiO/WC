@@ -6,7 +6,7 @@ $(document).ready(function(){
           var pos = $(this).offset().top;
     
           var winTop = $(window).scrollTop();
-            if (pos < winTop + 1000) {
+            if (pos < winTop + 2000) {
               $(this).addClass("imgslide");
             }
         });

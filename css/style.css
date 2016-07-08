@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, div {
     font-family: 'Oxygen', sans-serif; font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 #bigText {
@@ -40,6 +40,10 @@ p, div {
 
 h1{
     font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
 }
 
 .lightText {
@@ -241,6 +245,41 @@ footer {
 @media screen and (max-width: 347px) {
     .navbar-brand {
         font-size: 58px;
+    }
+}
+
+/* for mobiles iPhone 6 and below */
+@media screen and (max-width: 376px){
+    #brandPad {
+        padding: 20px 10px 20px 10px;
+    }
+    
+    .navbar-brand {
+        padding: 30px 15px 10px 30px;
+    }
+    
+    #containerPad {
+        padding: 0px 30px;
+    }
+    
+    #sectionLinks {
+        font-size: 29px;
+    }
+    
+    #tagLine {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    ul li {
+        font-size: 15px;
     }
 }
 
