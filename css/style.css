@@ -13,12 +13,16 @@ html {
     overflow: auto;
     margin: 0;
     padding: 0;
+    
+    
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    /*background-image: url("../images/noisy-texture-100x100.png");
+    background-repeat: repeat;*/
 }
 
 #body {
@@ -174,7 +178,13 @@ footer {
 
 .containerBg {
     background-color: #f6f6f6;
+    /*background-color: #dae8ea;*/
 }
+
+/*.containerBg2 {
+    background-color: #f6f6f6;
+    background-color: #f1c597;
+}*/
 
 .label-default {
   background-color: #414141;
