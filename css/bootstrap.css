@@ -4214,7 +4214,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4543,32 +4543,32 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /*Navbar CSS */
 .navbar-default {
-  background-color: #ffffff;
+  background-color: #414141;
   /*border-color: #b5d2d6;*/
 }
 .navbar-default .navbar-brand {
-  color: #000000;
+  color: #ffffff;
   /*font-size: 18px;*/
   padding-top: 30px;
   padding-bottom: 10px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #dedede;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #000000;
+  color: #ffffff;
   font-size: 25px;
   padding-top: 50px;
   
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #5e5e5e;
+  color: #dedede;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
